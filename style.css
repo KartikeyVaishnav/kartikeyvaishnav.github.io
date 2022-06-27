@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Montserrat:ital,wght@0,200;0,400;0,500;1,100;1,300;1,400&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+html{
+font-size: 10px;
+font-family:  'Montserrat', sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#hero{
+    background-image: url(./img/1jodhpur\ \(2\).jpg);
+    background-size: 100%;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero .hero{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+#hero #name{
+    
+
+    color: crimson;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .6;
+    z-index: -1;
+}
+
+#hero h2{
+    display: block;
+    width: fit-content;
+    position: relative;
+    font-size: 4rem;
+    color: whitesmoke;
+    margin-bottom: 30px;
+    
+    
+}
+
+#hero .button1{
+    display: inline-block;
+    color: white;
+    border: 3px solid crimson;
+    padding: 10px 30px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: .3s ease ;
+    transition-property: background-color, color;
+}
+
+
+#hero .button1:hover{
+    color: white;
+    background-color: crimson;
+}
+
+span{
+    color: crimson;
+}
+#services .services{
+   flex-direction: column;
+   text-align: center;
+   max-width: 1500px;
+   margin: 0 auto;
+   padding: 100px 0;
+
+}
+
+#services .service-top p{
+    text-align: center;
+    padding: 20px;
+    line-height: 1.5;
+    padding: 20px 15rem;
+}
+#services #service-title{
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 15px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+#services .service-top p{
+    font-size: 2rem;
+    letter-spacing: .05rem;
+    font-weight: 470;
+    margin-top: 5px;
+}
+
+#services .container .service-end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex: wrap;
+    
+
+}
+
+#services  .service-item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    background-image: url(./img/office1.png);
+    background-size: cover;
+    margin: 10px 35px;
+    color: white;
+    position: relative;
+    z-index: 1;
+    
+}
+
+#services .service-item::after{
+     content: '';
+     position: absolute;
+     left: 0;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     background-color: rgb(52, 49, 49);
+     opacity: .7;
+     z-index: -1;
+     border-radius: 10px;
+
+}
+
+#services .service-end h2{
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: .2rem;
+}
+
+#services .service-end p{
+    font-size: 1.4rem;
+    text-align: left;
+
+}
+
+/*project section*/
+
+#project .project{
+    flex-direction: column;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#project .project-header h2{
+    color: black;
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#project .all-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 1845px;
+}
+
+#project .project-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 60%;
+    height: 60%;
+    margin: 30px auto;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#project .project-info{
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(10, 8, 8);
+}
+
+#project .project-info h3{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: whitesmoke;
+    letter-spacing: .2;
+}
+
+#project .project-info h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: whitesmoke;
+    letter-spacing: .2;
+}
+
+#project .project-info p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: whitesmoke;
+    letter-spacing: .2;
+}
+
+#project .project-img{
+    
+    flex-basis: 50%;
+    height: 400px;
+    overflow: hidden;
+}
+
+#project .project-img img{
+    transition: .3s ease transform;
+}
+
+#project .project-items:hover .project-img img{
+    transform: scale(1.1);
+}
+
+/* About-me Section*/
+#about .about{
+   
+   display: flex; 
+}
+#about .about-left{
+   display: flex;
+   flex-direction: column-reverse;
+
+}
+#about .about-left img{
+    width: 15%;
+    margin-left: 230px;
+    
+    position: relative;
+  
+}
+
+
+
+
+
+#about .about-img{
+    height: 100%;
+    width: 100%;
+    margin-bottom: 100px;
+   position: relative;
+   margin-left: 370px;
+   
+}
+#about .about-img::after{
+    content: '';
+    position: absolute;
+    
+}
+
+#about .about-right{
+   
+    width: 100%;
+    
+}
+
+#about .about-right h2{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: .2;
+    margin-bottom: 60px;
+    text-align: center;
+   
+}
+
+#about .about-right h3{
+    text-align: left;
+    font-size: 2.3rem;
+    font-weight: 450;
+    margin-bottom: 5px;
+    letter-spacing: .2;
+    margin-left: 100px;
+}
+#about .about-right p{
+    margin-top: 10px;
+    text-align: center;
+   margin-bottom: 20px;
+    font-size: 1.5rem;
+    letter-spacing: .2;
+    font-weight: 500;
+}
+
+#about .about-right a{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    color: black;
+    border: 2px solid crimson;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: .3s ease ;
+    transition-property: background-color, color;
+    margin-left: 600px;
+    margin-bottom: 50px;
+    
+}
+
+#about .about-right a:hover{
+    color: black;
+    background-color: crimson;   
+}
+
+#contact .contact{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#contact .section-title{
+    
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: .2;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+#contact .contact-items{
+    width: 700px;
+}
+
+#contact .contact-item {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    margin: 30px ;
+    padding: 30px;
+    box-shadow: 0px 0px 18px 0 gray;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .3s ease box-shadow;
+}
+
+#contact .contact-item:hover{
+    box-shadow: 0px 0px 5px 0 gray;
+}
+
+#contact  .icon{
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+#contact .contact-info h2{
+     font-size: 2rem;
+     font-weight: 700;
+     letter-spacing: .2;
+     margin-bottom: 20px;
+     text-transform: uppercase;
+}
+
+#contact .contact-info h3{
+    font-size: 1.5rem;
+     font-weight: 700;
+     letter-spacing: .2;
+     margin-bottom: 20px;
+}
+
+#footer{
+    background-image: linear-gradient(60deg ,#29323c 0%,#485563 100% ); 
+}
+
+#footer .footer{
+    min-height: 200px;
+
+ flex-direction: column; 
+ padding-top: 60px;
+ padding-bottom: 15px;
+}
+
+#footer .footer h2{
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: .2;
+    color: white;
+}
+
+#footer .footer h3{
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+    letter-spacing: .1;
+    margin-bottom: 20px;
+}
+
+#footer .social-icons{
+    display: flex;
+    margin-bottom: 10px;
+   border: 2px;
+}
+
+#footer  p{
+    color: white;
+    margin-top: 30px;
+}
+
+#footer .social-items img{
+    filter: grayscale(1);
+    transition: .2s ease ;
+}
+
+#footer .social-items:hover img{
+    filter: grayscale(0);
+ 
+}
